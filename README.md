@@ -111,24 +111,6 @@ model = 'model.bst'
 
 ```
 
-    Loading EEG files
-
-
-
-    ---------------------------------------------------------------------------
-
-    FileNotFoundError                         Traceback (most recent call last)
-
-    <ipython-input-7-1a8bf93236e1> in <module>()
-          7 train_fragments = []
-          8 train_truth = []
-    ----> 9 filenames = [f for f in listdir("DEAP_data/") if (isfile(join("DEAP_data/", f)) and '.dat' in f)]
-         10 print("Filenames are ", filenames)
-         11 
-
-
-    FileNotFoundError: [Errno 2] No such file or directory: 'DEAP_data/'
-
 
 ## Classifing Online: 
 
@@ -207,33 +189,7 @@ clf.fit(x_train, y_train, eval_set=eval_set, eval_metric="mae")
 model = 'model.bst'
 ```
 
-    Loading EEG files
-
-
-
-    ---------------------------------------------------------------------------
-
-    FileNotFoundError                         Traceback (most recent call last)
-
-    <ipython-input-11-ea17146bd8a8> in <module>()
-          6 train_fragments = []
-          7 train_truth = []
-    ----> 8 filenames = [f for f in listdir("DEAP_data/") if (isfile(join("DEAP_data/", f)) and '.dat' in f)]
-          9 print("Filenames are ", filenames)
-         10 
-
-
-    FileNotFoundError: [Errno 2] No such file or directory: 'DEAP_data/'
 
 
 Et voilà ! A state-of-the-art classifier fit for a novel EEG application, which achieves almost 80% accuracy. Do you think you experience anger, jealousy, or happiness when you see most ads? What makes them more or less effective? 
 
-
-```python
-
-```
-
-
-```python
-
-```
